@@ -1,0 +1,61 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 100;
+  }
+  
+  /* Logo */
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff5722;
+  }
+  
+  /* Links */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+  }
+  
+  .navbar-links a:hover {
+    color: #ff5722;
+  }
+  
+  /* Cart Icon & Count */
+  .navbar-cart {
+    position: relative;
+    cursor: pointer;
+  }
+  .navbar-cart-icon {
+    font-size: 1.5rem;
+  }
+  .navbar-cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #ff5722;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  
+  /* MiniCart will position itself—no extra styles needed here */
+  

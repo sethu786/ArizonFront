@@ -16,24 +16,8 @@ export const CartProvider = ({ children }) => {
     localStorage.setItem('cart', JSON.stringify(cartItems));
   }, [cartItems]);
 
-  // Add item
-  const addToCart = (product) => {
-    setCartItems(prev => {
-      const exists = prev.find(i => i.id === product.id);
-      if (exists) {
-        return prev.map(i =>
-          i.id === product.id ? { ...i, quantity: i.quantity + 1 } : i
-        );
-      }
-      return [...prev, { ...product, quantity: 1 }];
-    });
-  };
-
-  // Remove item
-  const removeItem = (id) => {
-    setCartItems(prev => prev.filter(i => i.id !== id));
-  };
-
+ 
+  
   // Update qty
   const updateQuantity = (id, qty) => {
     if (qty < 1) return;

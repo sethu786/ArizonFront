@@ -22,7 +22,7 @@ export const CartProvider = ({ children }) => {
   const updateQuantity = (id, qty) => {
     if (qty < 1) return;
     setCartItems(prev =>
-      prev.map(i => (i.id === id ? { ...i, quantity: qty } : i))
+      prev.map(i => (id === id ? { ...i, quantity: qty } : i))
     );
   };
 
